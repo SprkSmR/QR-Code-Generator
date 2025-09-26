@@ -14,5 +14,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SprkSmR/QR-Code-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SprkSmR/QR-Code-Generator/issues"
+  },
+  "homepage": "https://github.com/SprkSmR/QR-Code-Generator#readme"
 }
