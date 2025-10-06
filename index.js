@@ -12,8 +12,11 @@ inquirer
     .then(answers => {
         var linkQR = qr.image(answers.linkToQR);
         linkQR.pipe(fs.createWriteStream('linkQR.png'));
+        fs.writeFile("link.txt", answers.linkToQR, err => {
+            if (err) {
+                console.log("Error writing link to file.");
+            } else {
+                console.log("File written succesfully");
+            }
+        })
     });
-
-/* 
-3. Create a txt file to save the user input using the native fs node module.
-*/
